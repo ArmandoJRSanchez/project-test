@@ -1,0 +1,56 @@
+:root {
+    --color-background: #000;
+    --color-texto-blanco: #fff;
+    --color-texto-negro: #000;
+    --color-primary: #008080;
+    --color-secundario: #8080ff;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu{
+    width: 260px;
+    height: 100vh;
+    background: var(--color-background);
+    position: fixed;
+}
+
+.menu-list {
+
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+
+.menu-list li {
+    list-style: none;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.menu-list li.active {
+    background: var(--color-secundario);
+}
+
+.menu-list li:hover {
+    background: var(--color-primary)!important;
+}
+
+.menu-list li a{
+    color: var(--color-texto-blanco);
+    text-decoration: none;
+}
+
+.main {
+    width: calc(98% - 260px);
+    padding: 10px;
+    position: absolute;
+    right: 0px;
+}
