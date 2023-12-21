@@ -54,3 +54,30 @@
     position: absolute;
     right: 0px;
 }
+
+
+.btn-menu {
+    float: right;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+
+.menu.hide {
+    transform: translate(-300px, 0px);
+    transition: all 0.5s ease-in-out;
+}
+
+.menu.hide ~ .main {
+    width: calc(98% - 50px);
+    height: auto;
+    position: absolute;
+    right: 0px;
+    transition: width 0.5s ease-in-out;
+}
+
+.show {
+    transform: translate(100px, 0px)!important;
+}
